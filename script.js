@@ -1,9 +1,9 @@
-const form= document.getElementById("form")
-alert("Fill form")
-form.addEventListener('submit',(e) =>{
-    e.preventDefault;
-    const message = document.getElementsByClassName('sub_container')
-    const intro = document.getElementsById('intro').value;
-    // document.getElementByClassName("intro").innerHTML(getElementById("form").value)
-    console.log(getElementsById('intro'))}
-)
+const form = document.getElementById('form')
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    // e.reset()
+    const ourtext = document.getElementById('Text').value
+    ourtext.reset();
+    const display = document.getElementById('intro').innerHTML = ourtext
+  
+})
